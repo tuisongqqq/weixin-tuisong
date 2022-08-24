@@ -13,19 +13,19 @@ public class JiNianRi {
     /**
      * 恋爱
      */
-    static String lianAi = "2018-05-21";
+    static String lianAi = "2021-11-10";
     /**
      * 领证
      */
-    static String linZheng = "2022-03-19";
+  //  static String linZheng = "2022-03-19";
     /**
      * 结婚
      */
-    static String jieHun = "2022-07-08";
+  //  static String jieHun = "2022-07-08";
     /**
      * 生日
      */
-    static String shengRi = "2023-03-02";
+    static String shengRi = "2023-03-03";
 
     private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
@@ -62,12 +62,12 @@ public class JiNianRi {
         return day;
     }
 
-    public static int getJieHun() {
-        return before(jieHun);
+   // public static int getJieHun() {
+      //  return before(jieHun);
     }
 
-    public static int getLinZhen() {
-        return before(linZheng);
+   // public static int getLinZhen() {
+       // return before(linZheng);
     }
 
     public static int getLianAi() {

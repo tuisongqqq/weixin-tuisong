@@ -17,8 +17,8 @@ public class Pusher {
     /**
      * 测试号的appId和secret
      */
-    private static String appId = "xxx";
-    private static String secret = "6e2a329fd59e83fb87f013cd3a405137";
+    private static String appId = "wx27df3a4aa44088e3";
+    private static String secret = "cae0041d0ca926bce66fbf9f4cb175ff";
     //模版id
     private static String templateId = "BmHHbIFsP7SqjebQ5rgDRjBxPtRcDxgrvqyiAojgrh8";
 
@@ -51,13 +51,13 @@ public class Pusher {
         //templateMessage.addData(new WxMpTemplateData("jiehun",JiNianRi.getJieHun()+""));
         templateMessage.addData(new WxMpTemplateData("linzhen",JiNianRi.getLinZhen()+"","#FF6347"));
         String beizhu = "";
-        if(JiNianRi.getJieHun() % 365 == 0){
+       // if(JiNianRi.getJieHun() % 365 == 0){
             beizhu = "今天是结婚纪念日！";
         }
         if(JiNianRi.getLianAi() % 365 == 0){
             beizhu = "今天是恋爱纪念日！";
         }
-        if(JiNianRi.getLinZhen() % 365 == 0){
+      //  if(JiNianRi.getLinZhen() % 365 == 0){
             beizhu = "今天是结婚纪念日！";
         }
         templateMessage.addData(new WxMpTemplateData("beizhu",beizhu,"#FF0000"));

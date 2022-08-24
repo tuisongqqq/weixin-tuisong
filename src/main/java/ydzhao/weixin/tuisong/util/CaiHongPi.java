@@ -18,14 +18,14 @@ import java.util.Random;
  * @Date 2022/8/2 17:26
  */
 public class CaiHongPi {
-    private static String key = "xxx";
+    private static String key = "55672c7e97c8189133c5afca91df1873";
     private static String url = "http://api.tianapi.com/caihongpi/index?key=";
     private static List<String> jinJuList = new ArrayList<>();
     private static String name = "老婆";
 
     public static String getCaiHongPi() {
         //默认彩虹屁
-        String str = "阳光落在屋里，爱你藏在心里";
+        String str = "阳光落在屋里，爱你藏在心里”——爱你的狗吧;
         try {
             JSONObject jsonObject = JSONObject.parseObject(HttpUtil.getUrl(url+key).replace("XXX", name));
             if (jsonObject.getIntValue("code") == 200) {
